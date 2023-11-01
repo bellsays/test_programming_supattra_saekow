@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "My Heros";
+}
+<h1>@ViewData["Title"]</h1>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+$(document).ready(function () {
+   $("#Selecthero").change(function () {
+      var selectObj = $(this);
+           $("#showhero").val(selectObj.find(':selected').text());
+   });
+});
+</script>
+<select name="mySelect" id="Selecthero">
+    <option value="11">Dr Nice</option>
+    <option value="12">neoromancer</option>
+    <option value="13">Bombasto</option>
+    <option value="14">Celeritas</option>
+    <option value="15">Magneta</option>
+    <option value="16">RubberMan</option>
+    <option value="17">Dynama</option>
+    <option value="18">Dr IQ</option>
+    <option value="19">Magma</option>
+    <option value="20">Tornado</option>
+</select>
+
+My hero is
+<input id="showhero" type="text" name="sampleText" style="border:none; border-bottom:solid" />
