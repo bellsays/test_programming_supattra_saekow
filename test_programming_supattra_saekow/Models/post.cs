@@ -1,4 +1,5 @@
-﻿namespace test_programming_supattra_saekow.Models
+﻿
+namespace test_programming_supattra_saekow.Models
 {
     public class Post
     {
@@ -8,4 +9,6 @@
         public string UserId { get; set; }
         public string UserName { get; set; }
     }
+
+    
 }
